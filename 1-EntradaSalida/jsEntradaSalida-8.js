@@ -8,9 +8,11 @@ function SacarResto()
 	var numerodividendo;
 	var numerodivisor;
 	var resultado;
+	var numerouno;
+	var numerodos;
 
-	numerodividendo=document.getElementById('numeroDividendo').value;
-	numeroDivisor=document.getElementById('numeroDivisor').value;
+	numerouno=document.getElementById('numeroDividendo').value;
+	numerodos=document.getElementById('numeroDivisor').value;
 
 	numerodividendo=parseInt(numerouno);
 	numerodivisor=parseInt(numerodos);
