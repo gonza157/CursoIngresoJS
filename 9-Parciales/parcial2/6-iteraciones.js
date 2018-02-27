@@ -6,15 +6,16 @@ function Mostrar()
 	var menor=0;
 	var contador=0;
 
-		numero=prompt("Ingresar numero");
-		numero= parseInt(numero);
+		
 	while(numero>0 && contador<7)
 	{
-		
+		numero=prompt("Ingresar numero");
+		numero= parseInt(numero);
 		contador++
 		while()
 		{	
-			numero=prompt("Ingresar numero");		{	
+			numero=prompt("Ingresar numero");
+			numero= parseInt(numero);
 		
 		}
 			if(numero>mayor)
