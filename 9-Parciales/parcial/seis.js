@@ -1,6 +1,53 @@
 function Mostrar()
 {
-	var numero;
+	var importe;
+	var mayorimporte=0;
+	var menorimporte=0;
+	var contador=0;
+	
+	
+	while(contador<23)
+	{
+		importe=prompt("ingrese valor");
+		importe=parseInt(importe);
+
+		while(isNaN(importe))
+		{
+			importe=prompt("ingrese valor");
+			importe=parseInt(importe);
+		}
+		if (contador == 0) 
+		{
+			mayorimporte = importe;
+			menorimporte = importe;
+		}
+
+		if(importe>mayorimporte)
+			{
+				mayorimporte=importe;
+			}else
+			{
+				if(importe<menorimporte)
+				{
+					menorimporte=importe;
+				}
+			}
+			contador++;
+	}
+	alert("El mayor importe es "+mayorimporte);
+	alert("El menor importe es "+menorimporte);
+
+	
+
+
+
+
+
+
+
+
+
+	/*var numero;
 	var numero1;
 	var letra;
 	var acumulador=0;
@@ -12,7 +59,7 @@ function Mostrar()
 	var numeromax=0;
 	var numeromin=0;
 
-	while(respuesta=="si")
+	while(respuesta !="no")
 	{
 		letra=prompt("ingresar letra");
 		numero1=prompt("ingresar numero");
@@ -55,12 +102,13 @@ function Mostrar()
 		{
 			numeromin=numero;
 		}
+		
+		respuesta=prompt("¿Desea ingresar mas valores?");
+	}
 		promedio=acumulador/acumulador2;
 		alert("el promedio de los positivos es "+promedio);
 		alert("La cantidad de bocales ingresadas es "+acumuladorbocales);
 		alert("El numero mayor es "+numeromax);
-		alert("el numero menor es "+numeromin);
-	}
-
+		alert("el numero menor es "+numeromin);*/
 	
 }

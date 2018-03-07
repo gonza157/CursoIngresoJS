@@ -1,6 +1,63 @@
 function Mostrar()
 {
-		var numero;
+	var nota;
+	var notamin=0;
+	var promedionota;
+	var sexo;
+	var totalvaronesaprobados=0;
+	var contador=0;
+	var acumulador=0;
+
+	while(contador <3)
+	{
+		nota=prompt("Ingreso nota del alumno");
+		sexo=prompt("Ingrese sexo del alumno");
+		nota=parseInt(nota);
+
+		while(nota<0 || nota>10 || isNaN(nota) )
+		{
+			nota=prompt("Ingreso nota del alumno");
+			nota=parseInt(nota);
+		}
+
+		while( sexo !="m" && sexo != "f")
+		{
+			sexo=prompt("Ingrese sexo del alumno");
+		}
+
+		if(contador==0)
+		{
+			notamin=nota;
+		}
+
+		if(nota< notamin)
+		{
+			notamin=nota;
+		}
+
+		if(nota>5 && sexo =="m" )
+		{
+			totalvaronesaprobados++
+		}
+		contador++		
+		acumulador=acumulador+nota;
+
+	}
+
+	promedionota=acumulador/contador;
+	alert("El promedio de las notas es "+promedionota);
+	alert("La cantidad de alumnos varones que sacaron mas de 6 es "+totalvaronesaprobados);
+	alert("La nota mas baja es "+notamin);
+
+
+
+
+
+
+
+
+
+	/*var numero;
 	var numero1;
 	var letra;
 	var acumulador=0;
@@ -60,5 +117,5 @@ function Mostrar()
 		alert("La cantidad de bocales ingresadas es "+acumuladorbocales);
 		alert("El numero mayor es "+numeromax);
 		alert("el numero menor es "+numeromin);
-	}
+	}*/
 }
